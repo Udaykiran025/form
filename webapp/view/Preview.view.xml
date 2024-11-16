@@ -1,0 +1,249 @@
+
+<mvc:View controllerName="com.mit.form1.appl.form.controller.Preview"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core" 
+    xmlns="sap.m">
+
+    <Page id="page" title="{i18n>title}">
+    <content>
+
+	<VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+		<f:SimpleForm  id="SimpleFormChange480_12120"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Personal Information" 
+			labelSpanXL="4" 
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false" >
+        
+        	<core:Title id="_IDGenTitle1" />
+				<Label id="_IDGenLabel1" text="Name" />
+				<Text id="_IDGenText91" text="{/firstname_new}"></Text>
+
+				<Label id="_IDGenLabel931" text="Date of Birth" />
+				<Text id="_IDGenText941" text="{/dob_new}"></Text>
+				
+				<Label id="_IDGenLabel743" text="Mobile Number" />
+				<Text id="_IDGenText1" text="{/mobile_new}"></Text>
+
+				
+				<core:Title id="_IDGenTitle2"  />
+				<Label id="_IDGenLabel73" text="Email ID" />
+				<Text id="_IDGenText31" text="{/email_new}"></Text>
+				
+				<Label id="_IDGenLabel713" text="Aadhar Number" />
+				<Text id="_IDGenText331" text="{/aadhar_new}"></Text>
+				
+				<!--Label id="_IDGenLabel2" text="Gender" /-->
+				
+			
+		
+                
+        </f:SimpleForm>
+		<f:SimpleForm id="SimpleFormChange480_12120-2"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Educational Details"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false">
+			
+				<core:Title id="_IDGenTitle3" />
+					<Label id="_IDGenLabel11" text="Course" />
+					<Text id="_IDGenText01" text="{/course_new}"></Text>
+
+					<Label id="_IDGenLabel7843" text="Specialization" />
+					<Text id="_IDGenText081" text="{/specialization_new}"></Text>
+
+					<Label id="_IDGenLabel873" text="University/Institute" />
+					<Text id="_IDGenText921" text="{/university_new}"></Text>
+				
+				<core:Title id="_IDGenTitle233"  />
+				<Label id="_IDGenLabel85" text="Passout Year"  />
+				<Text id="_IDGenText81" text="{/passout_new}"></Text>
+				
+				<Label id="_IDGenLabel83" text="CGPA" />
+				<Text id="_IDGenText261" text="{/cgpa_new}"></Text>
+		
+		</f:SimpleForm>
+
+		<f:SimpleForm id="SimpleFormChange880_12178820"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Resume Upload" 
+			labelSpanXL="4" 
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false" >
+
+			<Label id="_IDGenLabel883" text="Resume Upload" />
+				<Text id="_IDGenText201" text="{/Resume_new}"></Text>
+		
+			</f:SimpleForm>
+	
+        
+     </VBox>
+	
+      <!--VBox id="_IDGenVBox2" class="sapUiSmallMargin">
+		<f:Form id="FormDisplay354"
+			editable="false">
+			<f:title>
+				<core:Title id="_IDGenTitley2" text="Personal Details" />
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout id="_IDGenResponsiveGridLayout2"
+					labelSpanXL="3"
+					labelSpanL="3"
+					labelSpanM="3"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="0"
+					columnsXL="1"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer id="_IDGenFormContainer2" >
+					<f:formElements >
+						<f:FormElement id="_IDGenFormElement5" >
+                        
+							<List id="_IDGenList1" items="{/formData}">
+     
+                <StandardListItem id="_IDGenStandardListItem1"  
+                 title= "Name : " description="Mobile : {_IDGenInput834}"   />
+            
+                </List>
+                <List id="_IDGenList31" items="{/formData}">
+     
+                <StandardListItem id="_IDGenStandardListItem31"  
+                 title= "Email : {_IDGenInput34}"  description="Aadhar No : {_IDGenInput134}"   />
+                </List>
+
+                
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</VBox-->
+
+
+
+	<!--VBox id="_IDGenVBox23" class="sapUiSmallMargin">
+		<f:Form id="FormDisplay3354"
+			editable="false">
+			<f:title>
+				<core:Title id="_IDGenTitle32" text="Educational Details" />
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout id="_IDGenResponsiveGridLayout32"
+					labelSpanXL="3"
+					labelSpanL="3"
+					labelSpanM="3"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="0"
+					columnsXL="1"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer id="_IDGenFormContainer23" >
+					<f:formElements >
+						<f:FormElement id="_IDGenFormElement53" >
+                        
+							<List id="_IDGenList13" items="{/formData}">
+     
+                <StandardListItem id="_IDGenStandardListItem13"  
+                 title= "Course : {_IDMAL194}" description="Passout Year : {_IDMAL17828}"   />
+            
+                </List>
+                <List id="_IDGenList313" items="{/formData}">
+     
+                <StandardListItem id="_IDGenStandardListItem313"  
+                 title= "Specialization : {_IDMAL12864}"  description="CGPA : {_IDGenInput84}"   />
+                </List>
+                
+						</f:FormElement>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</VBox-->
+
+
+
+			
+				
+	
+        
+
+     
+      
+    
+    
+     <!--List id="_IDGenList1" items="{/formData}">
+     
+                <StandardListItem id="_IDGenStandardListItem1"  
+                 title= "Name : {_IDGenInput1}"  description="Name : {_IDGenInput834}"   />
+                 
+                  <StandardListItem id="_IDGenStandardListItem891"  
+                 title= "Name : {_IDGenInput1}"  description="Name : {_IDGenInput1}" />
+
+            </List-->
+		
+
+        
+            
+
+	</content>
+	 <footer>
+			<OverflowToolbar id="_IDGenOverflowToolbar1">
+				<ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+	<Button id="_IDGenButton52" type="Accept" text="Submit" press="osubmitbut1">
+		<layoutData><OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData1" priority="NeverOverflow" /></layoutData>
+	</Button>	
+	</OverflowToolbar>
+		</footer>
+	
+    </Page>
+</mvc:View>

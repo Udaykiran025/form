@@ -1,0 +1,333 @@
+<mvc:View controllerName="com.mit.form1.appl.form.controller.Form1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:u="sap.ui.unified"
+	xmlns:core="sap.ui.core"  class="viewPadding"
+    xmlns="sap.m">
+	 
+ 
+    <Page id="page"  title="{i18n>title}">
+    <content >
+
+	<FlexBox id="_IDGenFlexBox1" justifyContent="Center">
+	<Image id="_IDGenImage1" src="../images/maxihealth.webp" width="250px" ></Image>
+	</FlexBox>
+<IconTabBar
+
+		id="idIconTabBarMulti"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter id="_IDGenIconTabFilter1" icon="sap-icon://group" text="Personal Info"  iconColor="Default"  key="info">
+			<MessageStrip id="_IDGenMes345"
+			showIcon="true"
+			text=" Please fill all the mandatory required fields with ( * ) Marks " />
+				 <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+		<f:SimpleForm  id="SimpleFormChange480_12120"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Personal Information" 
+			labelSpanXL="4" 
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false" >
+        
+        	<core:Title id="_IDGenTitle1" />
+				<Label id="_IDGenLabel1" text="Name" />
+				<Input id="_IDGenInput1" value="{/Name}" type="Text" placeholder="Enter Full name"  required="true"/>
+                 <Label id="_IDGenLabel10" text="Date of Birth" />
+                  <DatePicker id="datePicker" 
+				  value="{path: '/date', type: 'sap.ui.model.type.Date'}" 
+				  required="true" change="onDateChange"
+                  valueState="{= ${pathToYourDateProperty} ? 'None' : 'Error' }"
+                     valueStateText="Date must be between 01/01/1995 and 12/31/2006" />
+				<!--Label id="_IDGenLabel10" text="Date Of Birth" /-->
+			<!--DatePicker id="_IDGenDatePicker1" value="{
+				path: '/date',
+				type: 'sap.ui.model.type.Date'}" /-->
+				
+				<Label id="_IDGenLabel743" text="Mobile Number" />
+				<Input id="_IDGenInput834" value="{/Mobile}" type="Number"  maxLength="10" required="true" placeholder="Enter 10 Digits Number"/>
+
+				<Label id="_IDGenLabel73" text="Email ID" />
+				<Input id="_IDGenInput34" value="{/Email}" type="Email" required="true" placeholder="Enter Email Id"/>
+				
+				<Label id="_IDGenLabel713" text="Aadhar Number" />
+				<Input id="_IDGenInput134" value="{/Aadhar}" type="Tel" maxLength="12" required="true" placeholder="Enter Aadhar Number"/>
+				
+				
+				<Label id="_IDGenLabel4" text="Marital status" />
+				<Select id="_IDMAL124" selectedKey="{Marital status}" selectedItem="Default">
+				<core:Item id="_IDGenItem45091"  key="{Marital status ID}"  text="{Marital status}"></core:Item>
+					<items>
+						<core:Item id="_IDGenItem1" text="Married" key="Married"/>
+						<core:Item id="_IDGenItem2" text="Unmarried" key="Unmarried"/>
+					</items>
+				</Select>
+
+
+				<core:Title id="_IDGenTitle2"  />
+				<Label id="_IDGenLabel5"  text="Father Name" />
+				<Input id="_IDGenInput6" type="Text" value="{Father}" placeholder="Enter Father Name" />
+				<Label id="_IDGenLabel3"  text="Mother Name" />
+				<Input id="_IDGenInput4" type="Text" value="{Mother}" placeholder="Enter Mother Name"/>
+					
+				<Label id="_IDGenLabel2" text="Gender" required="true" />
+				<RadioButtonGroup id="rbg2"  columns="2" selectedIndex="2"   class="sapUiMediumMarginBottom">
+			<RadioButton id="RB2-1" text="Male" />
+			<RadioButton id="RB2-3" text="Female" />
+		</RadioButtonGroup>
+			
+		
+                
+                	</f:SimpleForm>
+		<f:SimpleForm id="SimpleFormChange480_12120-2"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Contact Details"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false">
+			<f:content>
+				<core:Title id="_IDGenTitle3" text="Address"  />
+					<Label id="_IDGenLabel11" text="House No/Street." />
+				<Input id="_IDGenInput11" value="{House}" placeholder=" Enter House No" />
+				
+				<Input id="_IDGenInput12" value="{Street}" placeholder="Enter Street Name" >
+					<layoutData>
+						<l:GridData id="_IDGenGridData1" span="XL5 L5 M3 S4" />
+					</layoutData>
+				</Input>
+				<Label id="_IDGenLabel8" text="City/District." />
+				<Input id="_IDGenInput9" type="Text" value="{City}" placeholder="City"  />
+				<Label id="_IDGenLabel9"  text="State" />
+				<Input id="_IDGenInput10" type="Text" value="{State}" placeholder="State" />
+				<core:Title id="_IDGenTitle233"  />
+				<Label id="_IDGenLabel29" text="Pin Code" />
+				<Input id="_IDGenInput130"  value="{Pin}" placeholder="Enter Pin Code" type="Number" >
+				<layoutData>
+						<l:GridData id="_IDGenGridDatq11" span="XL5 L5 " />
+					</layoutData>
+					</Input>
+					<Label id="_IDGenLabe9l9" text="Country" />
+				<Input id="_IDGenInput190" type="Text" value="{Country}" placeholder="Country" />
+
+			</f:content>
+		</f:SimpleForm>
+	
+        
+     </VBox>
+			</IconTabFilter>
+			<IconTabFilter id="_IDGenIconTabFilter3"
+				icon="sap-icon://study-leave"
+				key="study-leave"
+				text="Eductaion"  >
+				<MessageStrip id="_IDGenMes245"
+			showIcon="true"
+			text=" Please fill all the mandatory required fields with ( * ) Marks " />
+				 <VBox id="_IDGenVBox18" class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormChange480_121820"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Educational Details" 
+			labelSpanXL="4" 
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			
+        
+        	<core:Title id="_IDGenTitle18" />
+
+
+
+				<Label id="_IDGenLabel81" text="Course" />
+				<Select id="_IDMAL194"  selectedKey="{/Coursekey}" required="true"  selectedItem="Default">
+				<core:Item id="_IDGenItem451"  key="{Course}"  text="{Course}"></core:Item>
+					<items>
+						<core:Item id="_IDGenItem10" text="BTECH" key="BTECH"/>
+						<core:Item id="_IDGenItem821" text="DEGREE" key="DEGREE"/>
+					</items>
+				</Select>
+				
+				<Label id="_IDGenLabel7843" text="Specialization" />
+				<Select id="_IDMAL12864" selectedKey="{/Specialization}" required="true" selectedItem="Default">
+				<core:Item id="_IDGenItem091"  key="{Specialization ID}"  text="{Specialization}"></core:Item>
+					<items>
+						<core:Item id="_IDGenItem618" text="MECH" key="MECH"/>
+						<core:Item id="_IDGenItem862" text="EEE" key="EEE"/>
+						<core:Item id="_IDGenItem232" text="CSE" key="CSE"/>
+						<core:Item id="_IDGenItem98" text="ECE" key="ECE"/>
+						<core:Item id="_IDGenItem22" text="IT" key="IT"/>
+					</items>
+				</Select>
+				<Label id="_IDGenLabel873" text="University/Institute" />
+				<Input id="_IDGenInput384" type="Text" value="{/University}" required="true" placeholder="University/Institute"/>
+
+				<core:Title id="_IDGenTitle82"  />
+				<Label id="_IDGenLabel85" text="Passout Year"  />
+				<Select id="_IDMAL17828" selectedKey="{/Passout}" required="true" >
+				<core:Item id="_IDGenItem471"  key="{Passout ID}"  text="{Passout}"></core:Item>
+					<items>
+						<core:Item id="_IDGenItem6180" text="2024" key="2024"/>
+						<core:Item id="_IDGenItem8620" text="2023" key="2023"/>
+					</items>
+				</Select>
+				<Label id="_IDGenLabel83" text="CGPA" />
+				<Input id="_IDGenInput84" type="Number" value="{/CGPA}"  required="true" placeholder="CGPA / 10"/>
+					
+				
+			
+		
+                
+                	</f:SimpleForm>
+		<f:SimpleForm id="SimpleFormChange480_182120-2"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Other Details"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false">
+			<f:content>
+					<Label id="_IDGenLabe8l2" text="Do you have any pending backlogs currently ?" textDirection="Inherit" />
+				<RadioButtonGroup id="rbg82" columns="2" selectedIndex="2" class="sapUiMediumMarginBottom">
+			<RadioButton id="RB2-18" text="Yes" />
+			<RadioButton id="RB2-38" text="No" />	
+		</RadioButtonGroup>
+			<Label id="_IDGenLabe5l2" text="Are there any break in studies ?" textDirection="Inherit"/>
+				<RadioButtonGroup id="rbg852" columns="2" selectedIndex="2" class="sapUiMediumMarginBottom">
+			<RadioButton id="RB2-158" text="Yes" />
+			<RadioButton id="RB2-358" text="No" />	
+		</RadioButtonGroup>
+			<Label id="_IDGenLabe8l25" text="Do you have any Work experience ?" textDirection="Inherit" />
+				<RadioButtonGroup id="rbg825" columns="2" selectedIndex="2" class="sapUiMediumMarginBottom">
+			<RadioButton id="RB2-185" text="Yes" />
+			<RadioButton id="RB2-385" text="No" />	
+		</RadioButtonGroup>
+
+			</f:content>
+		</f:SimpleForm>
+	
+        
+     </VBox>
+			</IconTabFilter>
+
+			
+			<IconTabFilter id="_IDGenIconTabFilter2"
+				icon="sap-icon://attachment"
+				key="attachments"
+				text="Attachment">
+					<l:VerticalLayout id="_IDGenVerticalLayout1">
+					<VBox id="_IDGenVBox198" class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormChange880_121820"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Resume Upload" 
+			labelSpanXL="4" 
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false" >
+
+		
+		<u:FileUploader
+			id="fileUploader"
+			name="myFileUpload"
+			uploadUrl="upload/"
+			tooltip="Upload your file to the local server"
+			uploadComplete="handleUploadComplete"
+			change="handleValueChange"
+			typeMissmatch="handleTypeMissmatch"
+			style="Emphasized"
+			fileType="pdf,Doc"
+			placeholder="Upload Resume">
+			
+				<u:parameters>
+					<u:FileUploaderParameter id="_IDGenFileUploaderParameter1"
+						name="Accept-CH"
+						value="Viewport-Width"  />
+					<u:FileUploaderParameter id="_IDGenFileUploaderParameter2"
+						name="Accept-CH"
+						value="Width"/>
+					<u:FileUploaderParameter id="_IDGenFileUploaderParameter3"
+						name="Accept-CH-Lifetime"
+						value="86400"/>
+				</u:parameters>
+			</u:FileUploader>
+				
+		<Button class="suryamycss"    id="_IDGenButton1"
+			text="Upload File"
+			press="handleUploadPress" />
+			</f:SimpleForm>
+	
+        
+     </VBox>
+			
+	</l:VerticalLayout>
+			</IconTabFilter>
+			
+			
+		</items>
+	</IconTabBar>
+
+
+   
+	 </content>
+	 <footer>
+			<OverflowToolbar id="_IDGenOverflowToolbar1">
+				<ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+					<Button id="_IDGenButton2" type="Accept" text="Preview/Submit" press="handlePreview">
+					<layoutData><OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData41" priority="NeverOverflow" /></layoutData>
+				</Button>
+				<!--Button id="_IDGenButton52" type="Accept" text="Submit" press="osubmitbut">
+					<layoutData><OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData1" priority="NeverOverflow" /></layoutData>
+				</Button-->
+			</OverflowToolbar>
+		</footer>
+    </Page>
+</mvc:View>
