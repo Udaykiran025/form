@@ -38,7 +38,7 @@ An SAP Fiori application.
 # Job Application Form
 
 ## Description
-The **Job Application Form** is a web-based application designed to streamline the process of collecting job applicant details. The form is divided into three sections (tabs) to ensure clarity and organization: **Personal Information**, **Educational Details**, and **Attachments**. The application is built using a combination of **HTML**, **JavaScript**.
+The **Job Application Form** is a web-based application designed to streamline the process of collecting job applicant details. The form is divided into three sections (tabs) to ensure clarity and organization: **Personal Information**, **Educational Details**, and **Attachments**. The application is built using a combination of **XML**, **JavaScript**.
 After filling out the form, applicants can **preview** their information to verify before submitting the application.
 
 ---
