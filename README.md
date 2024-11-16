@@ -79,8 +79,8 @@ After filling out the form, applicants can **preview** their information to veri
 
 ## Technologies Used
 ### Frontend:
-- **HTML**: To structure the form layout and elements.
-- **JavaScript**: For client-side validations, dynamic tab navigation, and interactivity.
+- **XML**
+- **JavaScript**
 
 
 
