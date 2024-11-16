@@ -69,7 +69,7 @@ After filling out the form, applicants can **preview** their information to veri
 
 ### 5. **Submit Section**  
    - After verifying the preview, the user can submit the form.
-   - 
+
 ### 6. **Tab Navigation**  
    - User-friendly navigation between the three tabs and the preview for a seamless experience.
 
